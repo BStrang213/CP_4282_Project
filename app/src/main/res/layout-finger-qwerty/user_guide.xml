@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/userGuide"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/userInformation"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:text="How to use the program:\nSelect a character and view their stats\nSelect the stat that you would like to change\nand type in the new stat, then press save\nPress the back button to go to the previous\nscreen" />
+
+    <TextView
+        android:id="@+id/userFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="TextView" />
+    <Button
+        android:id="@+id/userBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back" />
+
+</LinearLayout>

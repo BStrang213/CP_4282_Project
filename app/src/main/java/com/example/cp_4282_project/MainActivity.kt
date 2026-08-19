@@ -1,47 +1,24 @@
 package com.example.cp_4282_project
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.cp_4282_project.ui.theme.CP_4282_ProjectTheme
+import android.widget.TextView
+import android.widget.Button
+import android.view.View
+import android.widget.EditText
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            CP_4282_ProjectTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
+        setContentView(R.layout.team_roster)
+//        setContentView(R.layout.player_card)
+//        setContentView(R.layout.user_guide)
+        val button1: Button = findViewById(R.id.teamButton)
+        button1.setOnClickListener(this)
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+    override fun onClick(v: View?) {
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CP_4282_ProjectTheme {
-        Greeting("Android")
     }
 }
