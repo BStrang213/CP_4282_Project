@@ -3,19 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/purple_200">
 
     <TextView
         android:id="@+id/blankText"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="TextView" />
+        android:text="" />
 
     <ImageView
         android:id="@+id/playerImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="20dp"
         tools:src="@tools:sample/avatars" />
 
     <TextView
@@ -24,6 +26,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:gravity="center"
+        android:background="@color/white"
         android:text="Most Valuable Stat:" />
 
     <Button

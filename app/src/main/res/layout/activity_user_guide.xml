@@ -8,7 +8,7 @@
         android:id="@+id/userGuide"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="TextView" />
+        android:text="" />
 
     <TextView
         android:id="@+id/userInformation"
@@ -20,7 +20,17 @@
         android:id="@+id/userFeedback"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="TextView" />
+        android:text="User Feedback:" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback" />
+
     <Button
         android:id="@+id/userBackButton"
         android:layout_width="match_parent"

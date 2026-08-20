@@ -1,25 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
 
     <TextView
         android:id="@+id/blankText"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:text="TextView" />
+        android:text="" />
 
-    <TextView
-        android:id="@+id/playerInfo1"
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:text="player1" />
+        android:layout_height="150dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name " />
+            <TextView
+                android:id="@+id/Goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goals " />
+            <TextView
+                android:id="@+id/TotalMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minutes Played " />
+            <TextView
+                android:id="@+id/TotalGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Goals " />
+            <TextView
+                android:id="@+id/RecentForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Form " />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/player1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bradley Strang" />
+            <TextView
+                android:id="@+id/player1Goals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+            <TextView
+                android:id="@+id/player1TotalMinutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36" />
+            <TextView
+                android:id="@+id/player1TotalGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" />
+            <TextView
+                android:id="@+id/player1RecentForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:id="@+id/player2Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bradley Strang" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+    </TableLayout>
 
     <Button
         android:id="@+id/teamButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Go To Player!" />
+
+    <Button
+        android:id="@+id/InfoPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Guide"/>
 
 </LinearLayout>
