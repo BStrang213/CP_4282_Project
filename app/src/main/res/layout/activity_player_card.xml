@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/purple_200">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/blankText"
@@ -15,10 +14,11 @@
     <ImageView
         android:id="@+id/playerImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:layout_margin="20dp"
-        tools:src="@tools:sample/avatars" />
+        android:background="@drawable/border"
+        tools:src="@drawable/toronto_blue_jays" />
 
     <TextView
         android:id="@+id/valuableStat"
